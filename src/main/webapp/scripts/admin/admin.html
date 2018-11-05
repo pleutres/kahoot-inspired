@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-md-12 justify-content-around">
+        <h1>Maitre du jeu</h1>
+    </div>
+    <div class="row col-md-12"  style="margin:30px">
+        <div class="col-md-4 row justify-content-around">
+            <button ng-click="stopQuestion()" class="btn btn-danger">
+                Attendre les questions !
+            </button>
+        </div>
+        <div class="col-md-4 row justify-content-around">
+            <button ng-click="getQuestions()" class="btn btn-danger">
+                Recharger les questions
+            </button>
+        </div>
+        <div class="col-md-4 row justify-content-around">
+            <button ng-click="showConnection()" class="btn btn-danger">
+                Afficher la page de connexion
+            </button>
+        </div>
+    </div>
+
+    <div class="col-md-12 justify-content-around">
+        <div class="card" ng-repeat="question in questions">
+
+            <div class="card-title " ng-class="{'bg-success':question.run}" >
+                <h3>{{ question.title }}</h3>
+            </div>
+
+            <div class="card-text" >
+                <div class="col-md-12 row" ng-repeat="answer in question.answers">
+                    <div class="col-md-2" ng-if="answer.correct">OK</div>
+                    <div class="col-md-2" ng-if="!answer.correct">KO</div>
+                    <div class="col-md-10">{{ answer.text }}</div>
+                </div>
+            </div>
+            <div class="col-md-12 row justify-content-center card-title">
+                <div class="col-md-3 row justify-content-around">
+                    <button ng-click="startQuestion(question)" class="btn btn-primary">
+                        Démarrer !
+                    </button>
+                </div>
+                <div class="col-md-3 row justify-content-around">
+                    <button ng-click="scoring()" class="btn btn-danger">
+                        Afficher les scores
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

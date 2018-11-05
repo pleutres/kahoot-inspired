@@ -1,0 +1,24 @@
+<div class="row col-md-6 offset-3 align-content-center justify-content-center" style="min-height: 200px; height:400px">
+
+    <div class="col-12 text-center">
+        <h1 ngfx-pulse="true" class="text-primary "ngfx-infinite>Rejoignez la partie !</h1><br>
+        <h5 ng-if="isPreviousExists()">Votre précédent pseudo : {{$root.playerName}}</h5>
+    </div>
+
+    <div class="col-12 text-center" style="margin-top:20px">
+
+        <form name="pseudoForm" ng-submit="connect()" >
+        <p>
+            <input ng-model="newPlayerName"  class="text-center" placeholder="Choisissez un nom..." value="" required maxlength="15">
+        </p>
+        <p>
+
+            <button type="submit" class="btn btn-primary" ng-disabled="pseudoForm.$invalid">
+                Rejoindre le jeu !
+            </button>
+        </p>
+        </form>
+    </div>
+
+</div>
+

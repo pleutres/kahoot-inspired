@@ -1,0 +1,7 @@
+L'écran de jeu à afficher
+
+/#/screen
+
+L'écran de jeu du maitre du jeu
+
+/#/game-master

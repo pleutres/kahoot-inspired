@@ -1,0 +1,180 @@
+{
+  "questions": [
+    {
+      "title": "1- En quelle année est sortie cette chanson du groupe Téléphone ?",
+      "waitTime": 20,
+      "answers": [
+        {
+          "text": "1980",
+          "correct": false
+        },
+        {
+          "text": "1984",
+          "correct": true
+        },
+        {
+          "text": "1988",
+          "correct": false
+        },
+        {
+          "text": "1992",
+          "correct": false
+        }
+      ]
+    },
+	{
+      "title": "2- De quel dessin animé est extraite cette chanson ?",
+      "waitTime": 18,
+      "answers": [
+        {
+          "text": "La Belle et la Bête",
+          "correct": false
+        },
+        {
+          "text": "Aladdin",
+          "correct": true
+        },
+        {
+          "text": "Raiponce",
+          "correct": false
+        },
+        {
+          "text": "Alice au pays des merveilles",
+          "correct": false
+        }
+      ]
+    },
+	{
+      "title": "3- Cette chanson «Tant qu’on rêve encore» vient d’une comédie musicale… laquelle ?",
+      "waitTime": 17,
+      "answers": [
+        {
+          "text": "Le Roi Soleil",
+          "correct": true
+        },
+        {
+          "text": "Les 10 commandements",
+          "correct": false
+        },
+        {
+          "text": "Notre Dame de Paris",
+          "correct": false
+        },
+        {
+          "text": "Cléopâtre",
+          "correct": false
+        }
+      ]
+    },
+	{
+      "title": "4- Qui chante sur cette chanson ?",
+      "waitTime": 16,
+      "answers": [
+        {
+          "text": "Tal",
+          "correct": true
+        },
+        {
+          "text": "Shym",
+          "correct": false
+        },
+        {
+          "text": "Indila",
+          "correct": false
+        },
+        {
+          "text": "Zaho",
+          "correct": false
+        }
+      ]
+    },
+	{
+      "title": "5- Qui chante cette chanson (à l’envers) qui parle de rêves ?",
+      "waitTime": 15,
+      "answers": [
+        {
+          "text": "Jean-Jacques Goldman",
+          "correct": false
+        },
+        {
+          "text": "Alain Souchon",
+          "correct": false
+        },
+        {
+          "text": "Laurent Voulzy",
+          "correct": true
+        },
+        {
+          "text": "Calogero",
+          "correct": false
+        }
+      ]
+    },
+	{
+      "title": "6- Complétez les paroles : Apprendre à rêver, à rêver pour deux,…",
+      "waitTime": 15,
+      "answers": [
+        {
+          "text": "En mangeant des oeufs",
+          "correct": false
+        },
+        {
+          "text": "En s’grattant les cheveux",
+          "correct": false
+        },
+        {
+          "text": "Rien qu'en étant heureux",
+          "correct": false
+        },
+        {
+          "text": "Rien qu'en fermant les yeux",
+          "correct": true
+        }
+      ]
+    },
+	{
+      "title": "7- Quel compositeur célèbre a créé cette musique de nuit… ?",
+      "waitTime": 15,
+      "answers": [
+        {
+          "text": "Franz Schubert",
+          "correct": false
+        },
+        {
+          "text": "Jean-Sébastien Bach",
+          "correct": false
+        },
+        {
+          "text": "W. Amadeus Mozart",
+          "correct": true
+        },
+        {
+          "text": "Antonio Vivaldi",
+          "correct": false
+        }
+      ]
+    },
+	{
+      "title": "8- Quelle personne célèbre a dit cela ?",
+      "waitTime": 15,
+      "answers": [
+        {
+          "text": "Cristiano Ronaldo",
+          "correct": false
+        },
+        {
+          "text": "John Lennon",
+          "correct": true
+        },
+        {
+          "text": "Teddy Riner",
+          "correct": false
+        },
+        {
+          "text": "Omar Sy",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}

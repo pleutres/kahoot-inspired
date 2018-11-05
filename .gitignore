@@ -3,3 +3,5 @@ src/main/webapp/libs
 .settings
 .classpath
 .project
+.idea
+src/main/webapp/bower_components/

@@ -1,108 +1,65 @@
-body, * {
-  font-family: 'Open Sans', sans-serif;
+.body {
+  font-family: montserrat,"helvetica neue",helvetica,arial,sans-serif;
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 80%;
+#qrcode canvas {
+display: none;
 }
 
-input[type=text] {
+
+.player {
+  border-radius: 10px;
+  border: 2px solid #73AD21;
+  margin: 5px;
+  padding: 3px;
+}
+
+#players_strip {
   width: 100%;
-  border: solid 1px #D4D4D1;
-  transition: .7s;
-  font-size: 1.1em;
-  padding: 0.3em;
-  margin: 0.2em 0;
-}
-
-input[type=text]:focus {
-  -webkit-box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-  -moz-box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-  box-shadow: 0 0 5px 0 rgba(69, 155, 231, .75);
-  border-color: #459be7;
-  outline: none;
-}
-
-.info {
-  float: right;
-}
-
-form:after {
   display: block;
-  content: '';
-  clear: both;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
-button {
-  background: #459be7;
-  color: #FFF;
-  font-weight: 600;
-  padding: .3em 1.9em;
-  border: none;
-  font-size: 1.2em;
-  margin: 0;
-  text-shadow: 0 0 5px rgba(0, 0, 0, .3);
-  cursor: pointer;
-  transition: .7s;
+#players_strip span {
+  display: inline-block;
+  color: #343434;
+  padding-right: 5px;
+  z-index: 1;
+
+  display: inline-block;
+  position: absolute;
+
 }
 
-button:focus {
-  outline: none;
+/* The shadow DIVs of the sides are decorative and optional, but they add a very nice effect :) */
+
+#players_strip div.shadow{
+  position: absolute;
+  top: 0px;
+  width: 30px;
+  height: 100%;
+  z-index: 5;
+  background: #ffffff;
 }
 
-button:hover {
-  background: #1c82dd;
+#players_strip div.shadow.left{
+  left: 0px;
+  -webkit-box-shadow: 10px 0px 10px #fff;
+  -moz-box-shadow: 10px 0px 10px #fff;
+  box-shadow: 10px 0px 10px #fff;
 }
 
-button:disabled {
-  background-color: #90BFE8;
-  cursor: not-allowed;
+#players_strip div.shadow.right{
+  right: 0px;
+  -webkit-box-shadow: -10px 0px 10px #fff;
+  -moz-box-shadow: -10px 0px 10px #fff;
+  box-shadow: -10px 0px 10px #fff;
 }
 
-.count {
-  font-weight: 300;
-  font-size: 1.35em;
-  color: #CCC;
-  transition: .7s;
-}
-
-.count.danger {
-  color: #a94442;
-  font-weight: 600;
-}
-
-.message time {
-  width: 80px;
-  color: #999;
-  display: block;
-  float: left;
-}
-
-.message {
-  margin: 0;
-}
-
-.message .self {
-  font-weight: 600;
-}
-
-.message span {
-  width: calc(100% - 80px);
-  display: block;
-  float: left;
-  padding-left: 20px;
-  border-left: solid 1px #F1F1F1;
-  padding-bottom: .5em;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: solid 1px #F1F1F1;
-  margin: 1em 0;
-  padding: 0;
+.text-shadow {
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
+  font-size: 1.75rem;
 }

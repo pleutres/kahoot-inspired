@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/angularjs-toaster/toaster.min.css">
+    <link rel="stylesheet" href="/bower_components/angular-fx/dist/angular-fx.min.css">
+    <link rel="stylesheet" href="/bower_components/animate.css/animate.css">
+    <link rel="stylesheet" href="/assets/style.css">
+
+
+</head>
+<body ng-app="kahootCloneApp">
+<!-- Add your site or application content here -->
+
+    <div ui-view="content" class="container">
+
+        <div class="text-center">
+            <img width="300px" src="/assets/loader.gif">
+            <h2>Chargement...</h2>
+        </div>
+
+    </div>
+
+    <toaster-container toaster-options="{'time-out': 3000, 'close-button':true, 'animation-class': 'toast-center'}"></toaster-container>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/sockjs/sockjs.min.js"></script>
+    <script src="bower_components/stomp-websocket/lib/stomp.min.js"></script>
+    <script src="bower_components/angularjs-toaster/toaster.min.js"></script>
+    <script src="bower_components/angular-fx/dist/angular-fx.min.js"></script>
+    <!--<script src="bower_components/angular-animate/angular-animate.js"></script>-->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/routes.js"></script>
+    <script src="scripts/services/websocket.service.js"></script>
+    <script src="scripts/services/host.service.js"></script>
+    <script src="scripts/services/player.service.js"></script>
+    <script src="scripts/services/game.service.js"></script>
+
+    <script src="scripts/players/pseudo.js"></script>
+    <script src="scripts/players/player.js"></script>
+    <script src="scripts/screen/screen.js"></script>
+    <script src="scripts/admin/admin.js"></script>
+
+    <!-- endbuild -->
+</body>
+</html>

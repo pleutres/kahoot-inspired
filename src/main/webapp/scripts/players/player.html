@@ -1,0 +1,64 @@
+<div class="row  col-md-12 btn-info justify-content-center align-content-around text-center" style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+	<h1 style="margin:5px">{{ $parent.playerName }}</h1>
+</div>
+
+<div class="row col-md-12 align-content-center justify-content-center" style="min-height: 200px; height:400px">
+
+
+	<div ng-if="(gameStatus!='game-wait')"
+		 class="row bg-info col-md-12 align-content-center justify-content-center text-white text-center"  style="height:250px; margin-top:100px; margin-bottom:50px; border-radius: 25px">
+		<h3 ng-if="gameStatus=='game-start'">Levez les yeux vers l'écran ! <br><br>Le jeu commence dans <br>{{gameContent}}</h3>
+		<h3 ng-if="gameStatus=='game-reset'">Attendons la suite...</h3>
+		<h3 ng-if="gameStatus=='game-question'">La question est affichée... <br> Soyez prêt !&nbsp;</h3>
+		<h3 ng-if="gameStatus=='game-end'">La question est finie... &nbsp;</h3>
+		<h3 ng-if="gameStatus=='scoring'">Votre score est : <br><br><b>{{myscore.score}}</b></h3>
+	</div>
+
+	<div ng-if="(gameStatus=='game-wait')"
+		 class="row bg-info col-md-12 align-content-start justify-content-around text-white"  style="height:100px; margin-top:40px; margin-bottom:20px;  border-radius: 25px">
+		<div class="row col-md-12 justify-content-around ">
+		<!--<span><h2>{{ question.title }}</h2></span>-->
+		<span><h5>Encore : {{ count }} secondes</h5></span>
+		</div>
+		<span class="text-center" ng-if="(currentAnswer!=null)"><h6 >Votre réponse : <br></h6><h4>{{ currentAnswer.text }}</h4></span>
+		<span class="text-center" ng-if="(currentAnswer==null)"><h4 >Choisissez une réponse !</h4></span>
+	</div>
+
+
+	<div class="row col-md-12 align-content-stretch justify-content-center" style="min-height: 200px; height:300px" ng-if="gameStatus=='game-wait'">
+		<!--<div class="col-md-10">
+			<h3>{{ question.title }}</h3>
+		</div>
+		-->
+				<div ng-repeat="answer in question.answers"
+					 ng-click="sendAnswer($index, answer)"
+					 ngfx-wobble="animate[$index]" animationend="removeAnimation"
+					 class="d-flex col-5  align-items-center justify-content-center" ng-class="answerShape[$index]" style="margin:5px">
+					<svg viewBox="0 0 75 75" height="100px" width="100px">
+						<circle ng-if="$index==0" cx="37" cy="37" r="25" stroke="white" stroke-width="4" fill="transparent"/>
+						<rect ng-if="$index==1" x="13" y="13" width="50" height="50" stroke="white" stroke-width="4" fill="transparent"/>
+						<polygon ng-if="$index==2" points="37,13 13,60 60,60"  stroke="white" stroke-width="4" fill="transparent"/>
+						<path ng-if="$index==3" stroke="white" stroke-width="4" fill="transparent" d="
+								M 37.000 47.000
+								L 54.634 61.271
+								L 46.511 40.090
+								L 65.532 27.729
+								L 42.878 28.910
+								L 37.000 7.000
+								L 31.122 28.910
+								L 8.468 27.729
+								L 27.489 40.090
+								L 19.366 61.271
+								L 37.000 47.000
+						" />
+						</svg>
+					</svg>
+					<span class="text-white font-weight-bold" style="margin-left:10px">
+						{{ answer.text }}
+					</span>
+				</div>
+
+
+			</div>
+</div>
+

@@ -1,0 +1,44 @@
+{
+  "questions": [
+    {
+      "title": "Quel groupe de musique chante 'another brick in the wall' ???",
+      "waitTime": 10,
+      "answers": [
+        {
+          "text": "Tartempion",
+          "correct": false
+        },
+        {
+          "text": "Pink Floyd",
+          "correct": true
+        },
+        {
+          "text": "La réponse D",
+          "correct": false
+        },
+        {
+          "text": "Je ne sais pas",
+          "correct": false
+        }
+      ]
+    },
+    {
+      "title": "Quel est votre musique préférée ?",
+      "waitTime": 19,
+      "answers": [
+        {
+          "text": "The catchers",
+          "correct": false
+        },
+        {
+          "text": "Loreena",
+          "correct": true
+        },
+        {
+          "text": "Awolnation",
+          "correct": false
+        }
+      ]
+    }
+  ]
+}
